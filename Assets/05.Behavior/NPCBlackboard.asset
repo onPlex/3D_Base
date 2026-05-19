@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
   m_Name: NPCBlackboard
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.RuntimeBlackboardAsset
-  VersionTimestamp: 639147804884303038
+  VersionTimestamp: 639148331106468819
   AssetID:
     m_Value0: 16470081827996849649
     m_Value1: 1531465218310766922
@@ -20,6 +20,7 @@ MonoBehaviour:
     m_Variables:
     - rid: 6615417747042206005
     - rid: 6615417747042206007
+    - rid: 6615417760112443848
   m_SharedBlackboardVariableGuids: []
   references:
     version: 2
@@ -40,6 +41,14 @@ MonoBehaviour:
           m_Value1: 17221536501227019145
         Name: MoveSpeed
         m_Value: 3.5
+    - rid: 6615417760112443848
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 17641660244062708363
+          m_Value1: 11296746240611366693
+        Name: NullTarget
+        m_Value: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58,7 +67,8 @@ MonoBehaviour:
   m_Variables:
   - rid: 6615417747042206004
   - rid: 6615417747042206006
-  m_VersionTimestamp: 639147804884303038
+  - rid: 6615417760112443847
+  m_VersionTimestamp: 639148331106468819
   m_CommandBuffer:
     m_Commands: []
   m_RuntimeBlackboardAsset: {fileID: -2921667642849371107}
@@ -85,3 +95,13 @@ MonoBehaviour:
         IsExposed: 1
         m_IsShared: 0
         m_Value: 3.5
+    - rid: 6615417760112443847
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 17641660244062708363
+          m_Value1: 11296746240611366693
+        Name: NullTarget
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
