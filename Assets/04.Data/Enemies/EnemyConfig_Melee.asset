@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ead20b3e13c8d04ea5ee143d7b64f38, type: 3}
+  m_Name: EnemyConfig_Melee
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyConfigSO
+  patrolSpeed: 1.8
+  chaseSpeed: 3.8
+  rotationSpeed: 720
+  detectRadius: 10
+  viewAngle: 120
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRange: 2.1
+  attackCooldown: 1.2
+  attackStopDistanceRate: 0.85
+  waitAtPatrolPoint: 1
