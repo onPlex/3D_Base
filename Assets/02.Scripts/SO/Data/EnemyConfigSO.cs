@@ -22,3 +22,4 @@ public class EnemyConfigSO : ScriptableObject
     [Header("Patrol")]
     public float waitAtPatrolPoint = 1.0f;
 }
+
