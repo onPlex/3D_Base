@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: Blackboard
+  m_EditorClassIdentifier: Unity.Behavior.Authoring::Unity.Behavior.BehaviorBlackboardAuthoringAsset
+  AssetID:
+    m_Value0: 4954125224289946269
+    m_Value1: 10713708760742045464
+  m_Variables:
+  - rid: 6615417768679834611
+  - rid: 6615417768679834613
+  - rid: 6615417768679834615
+  m_VersionTimestamp: 639148743776645598
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: 6069310965571561047}
+  references:
+    version: 2
+    RefIds:
+    - rid: 6615417768679834611
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Vector3, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 10157648115009363612
+          m_Value1: 8723967863413519802
+        Name: NextPosition
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 6615417768679834613
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 8642721302799068486
+          m_Value1: 816123589243273243
+        Name: AttackDamage
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 100
+    - rid: 6615417768679834615
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 779175588793200144
+          m_Value1: 6408599040383122487
+        Name: CurrentHp
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 100
+--- !u!114 &6069310965571561047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: Blackboard
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.RuntimeBlackboardAsset
+  VersionTimestamp: 639148743776645598
+  AssetID:
+    m_Value0: 4954125224289946269
+    m_Value1: 10713708760742045464
+  m_Blackboard:
+    m_Variables:
+    - rid: 6615417768679834612
+    - rid: 6615417768679834614
+    - rid: 6615417768679834616
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6615417768679834612
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Vector3, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 10157648115009363612
+          m_Value1: 8723967863413519802
+        Name: NextPosition
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 6615417768679834614
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 8642721302799068486
+          m_Value1: 816123589243273243
+        Name: AttackDamage
+        m_Value: 100
+    - rid: 6615417768679834616
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 779175588793200144
+          m_Value1: 6408599040383122487
+        Name: CurrentHp
+        m_Value: 100

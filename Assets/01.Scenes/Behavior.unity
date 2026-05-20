@@ -246,11 +246,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604712594}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &361360755 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5678993047483104790, guid: dcbe82eddb6fc2345b5d17392cc90a5c, type: 3}
-  m_PrefabInstance: {fileID: 2728405397703805328}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &446779334
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,9 +319,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 461215460}
-  - component: {fileID: 461215462}
-  - component: {fileID: 461215461}
   - component: {fileID: 461215463}
+  - component: {fileID: 461215462}
   m_Layer: 0
   m_Name: Enemy_Melee
   m_TagString: Untagged
@@ -350,29 +344,6 @@ Transform:
   - {fileID: 1870967705}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &461215461
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461215459}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!195 &461215462
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -392,7 +363,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &461215463
@@ -404,10 +375,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 461215459}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 250afeaf87dac534082a848ef3cfa7d7, type: 3}
+  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NavMeshMoveTest
-  target: {fileID: 361360755}
+  m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.BehaviorGraphAgent
+  m_Graph: {fileID: 4761742410615693540, guid: 354cd805f7402e1498eecd0d670cdb35, type: 2}
+  m_BlackboardVariableOverridesList:
+  - rid: 6615417768679834600
+  - rid: 6615417773875265642
+  - rid: 6615417773875265643
+  m_OriginalGraph: {fileID: 4761742410615693540, guid: 354cd805f7402e1498eecd0d670cdb35, type: 2}
+  m_IsInitialised: 0
+  m_IsStarted: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 6615417768679834600
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 461215459}
+    - rid: 6615417773875265642
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 13286871672162216491
+          m_Value1: 4949414322832204284
+        Name: Target
+        m_Value: {fileID: 2728405397703805329}
+    - rid: 6615417773875265643
+      type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 7255591742221164223
+          m_Value1: 15833009734115890491
+        Name: Speed
+        m_Value: 1
 --- !u!1 &505702789
 GameObject:
   m_ObjectHideFlags: 0
@@ -1294,6 +1299,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcbe82eddb6fc2345b5d17392cc90a5c, type: 3}
+--- !u!1 &2728405397703805329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2382042618217154365, guid: dcbe82eddb6fc2345b5d17392cc90a5c, type: 3}
+  m_PrefabInstance: {fileID: 2728405397703805328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2850601345607466662
 GameObject:
   m_ObjectHideFlags: 0
