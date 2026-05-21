@@ -11,7 +11,7 @@ using Unity.Properties;
 // 이 노드가 Behavior Graph 에디터에서 어떻게 보일지 정의합니다.
 // 스토리(story)에 여러 변수들을 나열하여, 노드 UI에서 각 변수들을 한눈에 보고 연결할 수 있게 만듭니다.
 [NodeDescription(name: "Sense Target",
-    story: "Self, Target, CanSeeTarget, DistanceToTarget, LastKnownPosition, HasLastKnownPosition, TargetPosition",
+    story: "[Self] senses [Target] and updates",
     category: "Action/AI", id: "24cb70622f80a7812633f21cbf35c323")]
 public partial class SenseTargetAction : Action
 {

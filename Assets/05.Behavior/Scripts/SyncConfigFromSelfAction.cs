@@ -14,23 +14,28 @@ using Unity.Properties;
 //          여기에 적힌 단어들은 아래 선언한 BlackboardVariable 변수명과 매칭되어 슬롯으로 표시됩니다.
 // - category: 노드 생성 메뉴에서의 폴더 경로입니다.
 // - id: 노드의 고유 식별자입니다. 코드를 복사해서 새 노드를 만들 때 이 ID가 겹치지 않도록 주의해야 합니다.
-[NodeDescription(name: "Sync Config From Self",
-    story: "Self, AttackRange, DetectRadius, ChaseSpeed, PatrolSpeed, [AttackCooldown]", category: "Action/AI",
-    id: "55c1e220b86f25b7e3d8ac1f1c562f93")]
+[NodeDescription(name: "Sync Config From Self", story: "[Self] updates config", category: "Action", id: "55c1e220b86f25b7e3d8ac1f1c562f93")]
 // Unity Behavior 시스템이 추가적인 코드를 백그라운드에서 자동 생성하므로 반드시 'partial' 클래스로 선언해야 합니다.
 // 행동(Action)을 수행하는 리프(Leaf) 노드이므로 Action 클래스를 상속받습니다.
 public partial class SyncConfigFromSelfAction : Action
 {
     // [SerializeReference] 및 BlackboardVariable<T>
-    // Behavior Tree의 Blackboard에 있는 변수들과 이 스크립트를 연결해주는 역할을 합니다.
-    // [SerializeReference]를 붙여야 그래프 에디터에서 해당 변수를 드롭다운으로 선택하거나 값을 넣을 수 있습니다.
-    [SerializeReference] public BlackboardVariable<GameObject> Self;
-    [SerializeReference] public BlackboardVariable<float> AttackRange;
-    [SerializeReference] public BlackboardVariable<float> DetectRadius;
-    [SerializeReference] public BlackboardVariable<float> ChaseSpeed;
-    [SerializeReference] public BlackboardVariable<float> PatrolSpeed;
-    [SerializeReference] public BlackboardVariable<float> AttackCooldown;
 
+    // Behavior Tree의 Blackboard에 있는 변수들과 이 스크립트를 연결해주는 역할을 합니다.
+
+    // [SerializeReference]를 붙여야 그래프 에디터에서 해당 변수를 드롭다운으로 선택하거나 값을 넣을 수 있습니다.
+
+    [SerializeReference] public BlackboardVariable<GameObject> Self;
+
+    [SerializeReference] public BlackboardVariable<float> AttackRange;
+
+    [SerializeReference] public BlackboardVariable<float> DetectRadius;
+
+    [SerializeReference] public BlackboardVariable<float> ChaseSpeed;
+
+    [SerializeReference] public BlackboardVariable<float> PatrolSpeed;
+
+    [SerializeReference] public BlackboardVariable<float> AttackCooldown;
     // OnUpdate()
     // Behavior Tree가 실행되면서 이 노드에 도달했을 때(Tick) 호출되는 핵심 로직 함수입니다.
     // 실행 결과에 따라 Status(Success, Failure, Running 등)를 반환해야 합니다.
