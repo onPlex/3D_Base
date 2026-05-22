@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
   m_Name: BB_EnemyShared
   m_EditorClassIdentifier: Unity.Behavior::Unity.Behavior.RuntimeBlackboardAsset
-  VersionTimestamp: 639149507753043888
+  VersionTimestamp: 639150342650976284
   AssetID:
     m_Value0: 7220413247214346705
     m_Value1: 13660482475661227480
@@ -30,6 +30,9 @@ MonoBehaviour:
     - rid: 6615417792792101071
     - rid: 6615417792792101331
     - rid: 6615417792809927015
+    - rid: 6615417813445116688
+    - rid: 6615417814395650701
+    - rid: 6615417814631056183
   m_SharedBlackboardVariableGuids: []
   references:
     version: 2
@@ -130,6 +133,30 @@ MonoBehaviour:
           m_Value1: 4930095999731018988
         Name: PatrolSpeed
         m_Value: 0
+    - rid: 6615417813445116688
+      type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 9488299478264156319
+          m_Value1: 10893809715793140529
+        Name: HasLastKnownPosition
+        m_Value: 0
+    - rid: 6615417814395650701
+      type: {class: 'BlackboardVariable`1[[UnityEngine.Vector3, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 15459042636383899125
+          m_Value1: 5568023376758088024
+        Name: LastKnownPosition
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 6615417814631056183
+      type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 3985251152049440704
+          m_Value1: 4959640000237387525
+        Name: PatrolPoints
+        m_Value: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +185,10 @@ MonoBehaviour:
   - rid: 6615417792792101070
   - rid: 6615417792792101330
   - rid: 6615417792809927014
-  m_VersionTimestamp: 639149507753043888
+  - rid: 6615417813445116687
+  - rid: 6615417814395650700
+  - rid: 6615417814631056182
+  m_VersionTimestamp: 639150342650976284
   m_CommandBuffer:
     m_Commands: []
   m_RuntimeBlackboardAsset: {fileID: -6261595931816439204}
@@ -285,3 +315,33 @@ MonoBehaviour:
         IsExposed: 1
         m_IsShared: 0
         m_Value: 0
+    - rid: 6615417813445116687
+      type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9488299478264156319
+          m_Value1: 10893809715793140529
+        Name: HasLastKnownPosition
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 6615417814395650700
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Vector3, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 15459042636383899125
+          m_Value1: 5568023376758088024
+        Name: LastKnownPosition
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {x: 0, y: 0, z: 0}
+    - rid: 6615417814631056182
+      type: {class: 'TypedVariableModel`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 3985251152049440704
+          m_Value1: 4959640000237387525
+        Name: PatrolPoints
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: []
