@@ -28,6 +28,9 @@
 - [Phase1 vs Phase2 Change Log](Phase1_vs_Phase2_Change_Log.md) — Phase 2 도입 시 Phase 1 입력/애니/전투 연동 변경 요약
 - [Phase2 Implementation Guide](Phase2_Implementation_Guide_and_Source.md) — Phase 2 구현 참고(코드는 `Assets`에 반영됨)
 - [Unity 3D Course — Notion & Git](Unity3D_Course_Notion_and_Git.md) — 수업용 Notion 페이지 링크 및 `phase/*` 브랜치 정리
+- [LiveClass-Branch vs class-screening (Enemy AI)](branches/class-screening/LiveClass-Branch_vs_class-screening_EnemyAI.md) — `Behavior Graph`/`Enemy AI` 구현 차이 및 에셋 변화 요약
+- [LiveClass-Branch to class-screening Class Guide](branches/class-screening/LiveClass-Branch_to_class-screening_ClassGuide.md) — 수업 진행용 상세 가이드(`Behavior Graph` 변경 중심)
+- [Behavior Graph Observer Abort Deep Dive](branches/class-screening/BehaviorGraph_ObserverAbort_DeepDive.md) — `Observer Abort` 수정/추가 작업 심화 정리
 
 ## 현재 패키지 기준
 `Packages/manifest.json` 기준 핵심 패키지:
