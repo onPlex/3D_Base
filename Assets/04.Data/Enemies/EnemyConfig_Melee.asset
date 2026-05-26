@@ -19,10 +19,10 @@ MonoBehaviour:
   viewAngle: 120
   targetLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1
   attackRange: 2.1
   attackCooldown: 1.2
   attackStopDistanceRate: 0.85

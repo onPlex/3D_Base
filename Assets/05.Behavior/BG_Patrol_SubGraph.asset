@@ -78,7 +78,7 @@ MonoBehaviour:
           m_Value0: 0
           m_Value1: 0
         Name: 
-        m_Value: SpeedMagnitude
+        m_Value: Velocity Z
     - rid: 6615417815026106463
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -195,7 +195,7 @@ MonoBehaviour:
         GUID:
           m_Value0: 13316185363620168012
           m_Value1: 17247063346089243141
-        Name: DistnaceToTarget
+        Name: DistanceToTarget
         m_Value: 0
     - rid: 6615417815026106595
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -203,7 +203,7 @@ MonoBehaviour:
         GUID:
           m_Value0: 7468271009677942761
           m_Value1: 16727008834986105287
-        Name: CansSeeTarget
+        Name: CanSeeTarget
         m_Value: 0
     - rid: 6615417815026106596
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -990,7 +990,7 @@ MonoBehaviour:
           m_Value0: 0
           m_Value1: 0
         Name: 
-        m_Value: SpeedMagnitude
+        m_Value: Velocity Z
     - rid: 6615417815026106435
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:

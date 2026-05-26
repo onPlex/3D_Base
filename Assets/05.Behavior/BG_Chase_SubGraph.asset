@@ -147,7 +147,7 @@ MonoBehaviour:
         GUID:
           m_Value0: 13316185363620168012
           m_Value1: 17247063346089243141
-        Name: DistnaceToTarget
+        Name: DistanceToTarget
         m_Value: 0
     - rid: 6615417815026107343
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -155,7 +155,7 @@ MonoBehaviour:
         GUID:
           m_Value0: 7468271009677942761
           m_Value1: 16727008834986105287
-        Name: CansSeeTarget
+        Name: CanSeeTarget
         m_Value: 0
     - rid: 6615417815026107344
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -244,7 +244,7 @@ MonoBehaviour:
         m_Conditions:
         - rid: 6615417815026107357
         m_RequiresAllConditions: 0
-        m_ObserverType: 0
+        m_ObserverType: 2
     - rid: 6615417815026107354
       type: {class: ConditionalGuardModifier, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -260,7 +260,7 @@ MonoBehaviour:
         m_Conditions:
         - rid: 6615417815026107358
         m_RequiresAllConditions: 0
-        m_ObserverType: 0
+        m_ObserverType: 2
     - rid: 6615417815026107355
       type: {class: SetAgentSpeedAction, ns: , asm: Assembly-CSharp}
       data:
@@ -336,7 +336,7 @@ MonoBehaviour:
           m_Value0: 0
           m_Value1: 0
         Name: 
-        m_Value: SpeedMagnitude
+        m_Value: Velocity Z
     - rid: 6615417815026107361
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -602,7 +602,7 @@ MonoBehaviour:
         - rid: 6615417792859210414
         <RequiresAllConditionsTrue>k__BackingField: 0
         <ShouldTruncateNodeUI>k__BackingField: 0
-        <ObserverType>k__BackingField: 0
+        <ObserverType>k__BackingField: 2
     - rid: 6615417792859210394
       type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -675,7 +675,7 @@ MonoBehaviour:
         ID:
           m_Value0: 7468271009677942761
           m_Value1: 16727008834986105287
-        Name: CansSeeTarget
+        Name: CanSeeTarget
         IsExposed: 1
         m_IsShared: 0
         m_Value: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
         - rid: 6615417792859210686
         <RequiresAllConditionsTrue>k__BackingField: 0
         <ShouldTruncateNodeUI>k__BackingField: 0
-        <ObserverType>k__BackingField: 0
+        <ObserverType>k__BackingField: 2
     - rid: 6615417792859210665
       type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -843,7 +843,7 @@ MonoBehaviour:
         ID:
           m_Value0: 13316185363620168012
           m_Value1: 17247063346089243141
-        Name: DistnaceToTarget
+        Name: DistanceToTarget
         IsExposed: 1
         m_IsShared: 0
         m_Value: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
           m_Value0: 0
           m_Value1: 0
         Name: 
-        m_Value: SpeedMagnitude
+        m_Value: Velocity Z
     - rid: 6615417813445116313
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:

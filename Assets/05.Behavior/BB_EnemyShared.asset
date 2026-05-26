@@ -60,7 +60,7 @@ MonoBehaviour:
           m_Value0: 10314137365491902758
           m_Value1: 9398557215086214874
         Name: AttackCoolDown
-        m_Value: 0
+        m_Value: 1.2
     - rid: 6615417791744836268
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -68,14 +68,14 @@ MonoBehaviour:
           m_Value0: 8337402298662695656
           m_Value1: 1610990651243757181
         Name: AttackRange
-        m_Value: 0
+        m_Value: 2.1
     - rid: 6615417791744836270
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
           m_Value0: 13316185363620168012
           m_Value1: 17247063346089243141
-        Name: DistnaceToTarget
+        Name: DistanceToTarget
         m_Value: 0
     - rid: 6615417791744836272
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -83,7 +83,7 @@ MonoBehaviour:
         GUID:
           m_Value0: 7468271009677942761
           m_Value1: 16727008834986105287
-        Name: CansSeeTarget
+        Name: CanSeeTarget
         m_Value: 0
     - rid: 6615417792579502531
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
@@ -100,7 +100,7 @@ MonoBehaviour:
           m_Value0: 14170257317313714039
           m_Value1: 8704617000830899021
         Name: AttackTrigger
-        m_Value: 
+        m_Value: Trigger
     - rid: 6615417792629309849
       type: {class: 'BlackboardVariable`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -116,7 +116,7 @@ MonoBehaviour:
           m_Value0: 3739528862502388928
           m_Value1: 6591145564214718685
         Name: DetectRadius
-        m_Value: 0
+        m_Value: 10
     - rid: 6615417792792101331
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -124,7 +124,7 @@ MonoBehaviour:
           m_Value0: 16321171701070440596
           m_Value1: 9624241038267787457
         Name: ChaseSpeed
-        m_Value: 0
+        m_Value: 3.8
     - rid: 6615417792809927015
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -132,7 +132,7 @@ MonoBehaviour:
           m_Value0: 8277917143364007819
           m_Value1: 4930095999731018988
         Name: PatrolSpeed
-        m_Value: 0
+        m_Value: 1.8
     - rid: 6615417813445116688
       type: {class: 'BlackboardVariable`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -224,7 +224,7 @@ MonoBehaviour:
         Name: AttackCoolDown
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 0
+        m_Value: 1.2
     - rid: 6615417791744836267
       type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -234,14 +234,14 @@ MonoBehaviour:
         Name: AttackRange
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 0
+        m_Value: 2.1
     - rid: 6615417791744836269
       type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
           m_Value0: 13316185363620168012
           m_Value1: 17247063346089243141
-        Name: DistnaceToTarget
+        Name: DistanceToTarget
         IsExposed: 1
         m_IsShared: 0
         m_Value: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
         ID:
           m_Value0: 7468271009677942761
           m_Value1: 16727008834986105287
-        Name: CansSeeTarget
+        Name: CanSeeTarget
         IsExposed: 1
         m_IsShared: 0
         m_Value: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
         Name: AttackTrigger
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 
+        m_Value: Trigger
     - rid: 6615417792629309848
       type: {class: 'TypedVariableModel`1[[UnityEngine.Animator, UnityEngine.AnimationModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -294,7 +294,7 @@ MonoBehaviour:
         Name: DetectRadius
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 0
+        m_Value: 10
     - rid: 6615417792792101330
       type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -304,7 +304,7 @@ MonoBehaviour:
         Name: ChaseSpeed
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 0
+        m_Value: 3.8
     - rid: 6615417792809927014
       type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
@@ -314,7 +314,7 @@ MonoBehaviour:
         Name: PatrolSpeed
         IsExposed: 1
         m_IsShared: 0
-        m_Value: 0
+        m_Value: 1.8
     - rid: 6615417813445116687
       type: {class: 'TypedVariableModel`1[[System.Boolean, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
